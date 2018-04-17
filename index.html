@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
 	<title>JPW - Jake Wills</title>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -11,12 +11,14 @@
 	<link rel="shortcut icon" href="./favicons/favicon.ico">
 	<meta name="msapplication-config" content="./favicons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+	<meta name="Description" content="These are some of the things I get up to.">
 	<style>
 html {
 	min-width:320px;
 }
 body, input, select {
 	font-family: 'Century Gothic', CenturyGothic, 'Lato', sans-serif;
+	font-size:16px;
 }
 .thing{
 	display:inline-block;
@@ -26,7 +28,7 @@ body, input, select {
 	text-align:left;
 	padding:10px;
 	margin:10px;
-	font-size:15px;
+	font-size:16px;
 	cursor:pointer;
 }
 .thing img {
@@ -51,7 +53,7 @@ a{
 <body>
 <img src='https://tracking.jake4maths.com/homeimage.php?url=home' style='position:absolute;left:-100px;top:-100px;'>
 <div style='text-align:center;font-size:3em;'>
-<img src="jw.png" style='margin:auto;display:inline-block;width:250px;padding:5px;'><img src="avatar.png" style='margin:auto;display:inline-block;width:250px;padding:5px;'><br>
+<img data-src="jw.png" style='margin:auto;display:inline-block;width:250px;padding:5px;' alt='JW Logo'><img data-src="avatar.png" style='margin:auto;display:inline-block;width:250px;padding:5px;' alt='Face'><br>
 <div style='font-size:130%;'>Jake Wills</div>
 </div>
 <div style='text-align:center;width:auto;'>
@@ -61,73 +63,73 @@ If you've got a project you want me to help out with <a href='mailto:hello@jpw.n
 <div style='text-align:center;margin:auto;font-size:0;'>
 <a href="https://time.jake4maths.com">
 <div class=thing>
-	<img src='https://time.jake4maths.com/logo.png'><br>
+	<img data-src='https://time.jake4maths.com/logo.png' alt='Time Logo'><br>
 	Easy way to keep track of how much time you spend on projects.
 </div>
 </a>
 <a href="https://www.jake4maths.com/grapher/">
 <div class=thing>
-	<img src='nzgrapher.png'><br>
+	<img data-src='nzgrapher.png' alt='NZGrapher Logo'><br>
 	Site to generate statistical graphs for a wide range of data.
 </div>
 </a>
 <a href="https://www.mathsnz.com">
 <div class=thing>
-	<img src='mathsnz.png'><br>
+	<img data-src='mathsnz.png' alt='MathsNZ Logo'><br>
 	Site to support teachers teaching maths in New Zealand.
 </div>
 </a>
 <a href="https://students.mathsnz.com">
 <div class=thing>
-	<img src='students.png'><br>
+	<img data-src='students.png' alt='MathsNZ Students Logo'><br>
 	Site to support students learning maths in New Zealand.
 </div>
 </a>
 <a href="https://students.mathsnz.com/qg/">
 <div class=thing>
-	<img src='generator.png'><br>
+	<img data-src='generator.png' alt='MathsNZ Question Generator Logo'><br>
 	Site to create questions / workseets for students doing maths in New Zealand.
 </div>
 </a>
 <a href="https://tweetwall.jake4maths.com">
 <div class=thing>
-	<img src='modtweetwall.png'><br>
+	<img data-src='modtweetwall.png' alt='ModTweetWall Logo'><br>
 	Free tweet wall with moderation features (for use at conferences).
 </div>
 </a>
 <a href="https://github.com/mathsnz/ADSync">
 <div class=thing>
-	<img src='directorysync.png'><br>
+	<img data-src='directorysync.png' alt='Directory Sync Logo'><br>
 	Sync to AD from KAMAR using directory services (open source).
 </div>
 </a>
 <a href='https://assay.co.nz/rostersyncv3/'>
 <div class=thing>
-	<img src='rostersync.png'><br>
-	Create a Classroom class for each class for each teacher with the students in it.
+	<img data-src='rostersync.png' alt='Roster Sync Logo'><br>
+	Create Classrooms for each every class with the students / teachers in it.
 </div>
 </a>
 <a href='https://tpt.jake4maths.com/'>
 <div class=thing>
-	<img src='tptanalysis.png'><br>
+	<img data-src='tptanalysis.png' alt='TPT Analysis Logo'><br>
 	Tool to easily analyse sales data from Teachers Pay Teachers.
 </div>
 </a>
 <a href="https://secure.mathsnz.com/">
 <div class=thing>
-	<img src='secure.png'><br>
+	<img data-src='secure.png' alt='MathsNZ Secure Logo'><br>
 	Site for teachers to securely share assessment resources.
 </div>
 </a>
 <a href="https://www.assay.co.nz/assay3.php">
 <div class=thing>
-	<img src='assay.png'><br>
-	I developed this before selling it... makes it easy for schools to use their data.
+	<img data-src='assay.png' alt='Assay Logo'><br>
+	I developed this before selling it... makes it easy for schools to use data.
 </div>
 </a>
 <a href='https://www.flickr.com/photos/jakepwills'>
 <div class=thing>
-	<img src='flickr.jpg'><br>
+	<img data-src='flickr.jpg' alt='Flickr Photo'><br>
 	I also like to take photos of random things... particularly stars.
 </div>
 </a>
@@ -137,3 +139,12 @@ If you've got a project you want me to help out with <a href='mailto:hello@jpw.n
 <br>If you want to get in touch <a href='mailto:hello@jpw.nz'>email me</a> or give me a call on 021-061-5390<br><br>
 </div>
 </body>
+<script>
+[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
+});
+</script>
+</html>
