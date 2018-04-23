@@ -68,31 +68,32 @@ For other things I do <a href='./'>see here</a>.<br>
 <br>
 Teachers enter in the key competencies for students in a google doc:<br>
 <br>
-<img data-src='customreporting1.png' alt='Custom Reporting Image' onclick='lightbox(this)' class=pointer><br>
+<img data-src='customreporting1.png' alt='Custom Reporting Image' onclick='lightbox(this)' class='pointer lightbox'><br>
 <br>
 This makes it really easy to see who has and hasn't done their reports:<br>
 <br>
-<img data-src='customreporting2.png' alt='Custom Reporting Image' onclick='lightbox(this)' class=pointer><br>
+<img data-src='customreporting2.png' alt='Custom Reporting Image' onclick='lightbox(this)' class='pointer lightbox'><br>
 <br>
 Optionally students can contribute their voice to the report as well using a google form:<br>
 <br>
-<img data-src='customreporting3.png' alt='Custom Reporting Image' class='half pointer' onclick='lightbox(this)' ><br>
+<img data-src='customreporting3.png' alt='Custom Reporting Image' class='half pointer lightbox' onclick='lightbox(this)' ><br>
 <br>
 This is all then imported back into KAMAR so you can produce the reports using all the attendance and achievement data in there and have pages that look like these:<br>
 <br>
-<img data-src='customreporting4.png' alt='Custom Reporting Image' class='half pointer' onclick='lightbox(this)'>
-<img data-src='customreporting5.png' alt='Custom Reporting Image' class='half pointer' onclick='lightbox(this)'><br>
+<img data-src='customreporting4.png' alt='Custom Reporting Image' class='half pointer lightbox' onclick='lightbox(this)'>
+<img data-src='customreporting5.png' alt='Custom Reporting Image' class='half pointer lightbox' onclick='lightbox(this)'><br>
 <br>
 If you want to get in touch <a href='mailto:hello@jpw.nz'>email me</a> or give me a call on 021-061-5390<br>
 For other things I do <a href='./'>see here</a>.<br><br>
 </div>
 <div id=lightbox style='display:none;' onclick="document.getElementById('lightbox').style.display='none';">
-	<br>Click to close<br>
+	<br>Click or press ESC to close<br>
 	<img src='' id=lightboximage>
 </div>
 </main>
 </body>
 <script>
+var lightboximage = 
 [].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
   img.setAttribute('src', img.getAttribute('data-src'));
   img.onload = function() {
@@ -100,8 +101,41 @@ For other things I do <a href='./'>see here</a>.<br><br>
   };
 });
 function lightbox(img){
+	lightboximage = img;
 	document.getElementById('lightboximage').setAttribute('src', img.getAttribute('src'));
 	document.getElementById('lightbox').style.display='block';
+}
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '27') {
+        // escape key
+		document.getElementById('lightbox').style.display='none';
+    } else if (e.keyCode == '37') {
+       // left arrow
+	   lightboximage = lightboximage.previousElementSibling;
+	   while(!lightboximage.classList.contains('lightbox') && lightboximage.previousElementSibling != null){
+			lightboximage = lightboximage.previousElementSibling;
+	   };
+	   if(!lightboximage.classList.contains('lightbox')){
+			lightboximage = document.getElementsByClassName("lightbox")[document.getElementsByClassName("lightbox").length-1];
+	   }
+	   document.getElementById('lightboximage').setAttribute('src', lightboximage.getAttribute('src'));
+    } else if (e.keyCode == '39') {
+       // right arrow
+	   lightboximage = lightboximage.nextElementSibling;
+	   while(!lightboximage.classList.contains('lightbox') && lightboximage.nextElementSibling != null){
+			lightboximage = lightboximage.nextElementSibling;
+	   };
+	   if(!lightboximage.classList.contains('lightbox')){
+			lightboximage = document.getElementsByClassName("lightbox")[0];
+	   }
+	   document.getElementById('lightboximage').setAttribute('src', lightboximage.getAttribute('src'));
+    }
+
 }
 </script>
 </html>
