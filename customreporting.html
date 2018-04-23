@@ -34,6 +34,24 @@ img{
 a{
 	color:#000;
 }
+.pointer {
+	cursor:pointer;
+}
+#lightbox{
+	position:fixed;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background-color:rgba(255,255,255,0.9);
+	font-weight:bold;
+}
+#lightbox img{
+	max-width:calc(100% - 20px);
+	max-height:calc(100% - 80px);
+	height:auto;
+	width:auto;
+}
 	</style>
 </head>
 <body>
@@ -50,23 +68,27 @@ For other things I do <a href='./'>see here</a>.<br>
 <br>
 Teachers enter in the key competencies for students in a google doc:<br>
 <br>
-<img data-src='customreporting1.png' alt='Custom Reporting Image'><br>
+<img data-src='customreporting1.png' alt='Custom Reporting Image' onclick='lightbox(this)' class=pointer><br>
 <br>
 This makes it really easy to see who has and hasn't done their reports:<br>
 <br>
-<img data-src='customreporting2.png' alt='Custom Reporting Image'><br>
+<img data-src='customreporting2.png' alt='Custom Reporting Image' onclick='lightbox(this)' class=pointer><br>
 <br>
 Optionally students can contribute their voice to the report as well using a google form:<br>
 <br>
-<img data-src='customreporting3.png' alt='Custom Reporting Image' class=half><br>
+<img data-src='customreporting3.png' alt='Custom Reporting Image' class='half pointer' onclick='lightbox(this)' ><br>
 <br>
 This is all then imported back into KAMAR so you can produce the reports using all the attendance and achievement data in there and have pages that look like these:<br>
 <br>
-<img data-src='customreporting4.png' alt='Custom Reporting Image' class=half>
-<img data-src='customreporting5.png' alt='Custom Reporting Image' class=half><br>
+<img data-src='customreporting4.png' alt='Custom Reporting Image' class='half pointer' onclick='lightbox(this)'>
+<img data-src='customreporting5.png' alt='Custom Reporting Image' class='half pointer' onclick='lightbox(this)'><br>
 <br>
 If you want to get in touch <a href='mailto:hello@jpw.nz'>email me</a> or give me a call on 021-061-5390<br>
 For other things I do <a href='./'>see here</a>.<br><br>
+</div>
+<div id=lightbox style='display:none;' onclick="document.getElementById('lightbox').style.display='none';">
+	<br>Click to close<br>
+	<img src='' id=lightboximage>
 </div>
 </main>
 </body>
@@ -77,5 +99,9 @@ For other things I do <a href='./'>see here</a>.<br><br>
     img.removeAttribute('data-src');
   };
 });
+function lightbox(img){
+	document.getElementById('lightboximage').setAttribute('src', img.getAttribute('src'));
+	document.getElementById('lightbox').style.display='block';
+}
 </script>
 </html>
