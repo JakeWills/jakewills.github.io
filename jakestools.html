@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+	<title>Jake's Tools - Jake Wills</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="./favicons/manifest.json">
+	<link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="./favicons/favicon.ico">
+	<meta name="msapplication-config" content="./favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="Description" content="These are some of the things I get up to.">
+	<style>
+html {
+	min-width:320px;
+}
+body, input, select {
+	font-family: 'Century Gothic', CenturyGothic, 'Lato', sans-serif;
+	font-size:16px;
+	text-align:center;
+}
+main img{
+   -moz-box-shadow:    0 0 5px #ccc;
+   -webkit-box-shadow: 0 0 5px #ccc;
+   box-shadow:         0 0 5px #ccc;
+   width:calc(100% - 20px);
+   margin:10px;
+}
+.half {
+	width:calc(50% - 25px);
+}
+.quarter {
+	width:calc(25% - 25px);
+}
+a{
+	color:#000;
+}
+.pointer {
+	cursor:pointer;
+}
+#lightbox{
+	position:fixed;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background-color:rgba(255,255,255,0.9);
+	font-weight:bold;
+}
+#lightbox img{
+	max-width:calc(100% - 20px);
+	max-height:calc(100% - 80px);
+	height:auto;
+	width:auto;
+}
+	</style>
+</head>
+<body>
+<img src='https://tracking.jake4maths.com/homeimage.php?url=jakestools' style='position:absolute;left:-100px;top:-100px;width:1px;height:1px;' alt='tracking'>
+<a href='./' style='position:absolute;top:10px;left:10px;text-decoration:none;'><img style='height:30px;vertical-align:-50%;' src='jw.png'> Home</a><br>
+<div style='text-align:center;font-size:3em;'>
+<div style='font-size:130%;'>Jake's Tools</div>
+</div>
+<main>
+<div style='text-align:center;max-width:800px;margin:0 auto;'>
+Automatic emails (plus a few other things) to students, teachers and guardians to help ensure info is given to the right people at the right time based on data that comes out of KAMAR.<br>
+<br>
+Click any image below to enlarge.<br>
+<br>
+<b>Daily Notices</b> delievered to anyone that subscribes (teachers or students):<br>
+<img data-src='./jakestoolsimages/DailyNotices.png' alt='DailyNotices' class='half pointer lightbox' onclick='lightbox(this)'><br>
+<br>
+<b>Daily Summary</b> of students missing for the last two days to tutor teachers:<br>
+<img data-src='./jakestoolsimages/DailyTutor.png' alt='DailyTutor' class='half pointer lightbox' onclick='lightbox(this)'><br>
+<br>
+<b>Weekly Student Summaries</b> to students and guardians for attendance and assessments:<br>
+<img data-src='./jakestoolsimages/WeeklyStudent.png' alt='WeeklyStudent' class='half pointer lightbox' onclick='lightbox(this)'><br>
+<br>
+<b>Weekly Attendance Summaries</b> to deans and form teachers for their class:<br>
+<img data-src='./jakestoolsimages/WeeklyTutor.png' alt='WeeklyTutor' class='half pointer lightbox' onclick='lightbox(this)'><br>
+<br>
+<b>Other Things:</b><br>
+The system also can do things like work out average class size and other custom queries.<br>
+<br>
+If you want to get in touch <a href='mailto:hello@jpw.nz'>email me</a> or give me a call on 021-061-5390<br>
+For other things I do <a href='./'>see here</a>.<br><br>
+</div>
+<div id=lightbox style='display:none;' onclick="document.getElementById('lightbox').style.display='none';">
+	<br>Click or press ESC to close<br>
+	<img src='' id=lightboximage>
+</div>
+</main>
+</body>
+<script>
+var lightboximage = 
+[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
+});
+function lightbox(img){
+	lightboximage = img;
+	document.getElementById('lightboximage').setAttribute('src', img.getAttribute('src'));
+	document.getElementById('lightbox').style.display='block';
+}
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '27') {
+        // escape key
+		document.getElementById('lightbox').style.display='none';
+    } else if (e.keyCode == '37') {
+       // left arrow
+	   lightboximage = lightboximage.previousElementSibling;
+	   while(!lightboximage.classList.contains('lightbox') && lightboximage.previousElementSibling != null){
+			lightboximage = lightboximage.previousElementSibling;
+	   };
+	   if(!lightboximage.classList.contains('lightbox')){
+			lightboximage = document.getElementsByClassName("lightbox")[document.getElementsByClassName("lightbox").length-1];
+	   }
+	   document.getElementById('lightboximage').setAttribute('src', lightboximage.getAttribute('src'));
+    } else if (e.keyCode == '39') {
+       // right arrow
+	   lightboximage = lightboximage.nextElementSibling;
+	   while(!lightboximage.classList.contains('lightbox') && lightboximage.nextElementSibling != null){
+			lightboximage = lightboximage.nextElementSibling;
+	   };
+	   if(!lightboximage.classList.contains('lightbox')){
+			lightboximage = document.getElementsByClassName("lightbox")[0];
+	   }
+	   document.getElementById('lightboximage').setAttribute('src', lightboximage.getAttribute('src'));
+    }
+
+}
+</script>
+</html>
