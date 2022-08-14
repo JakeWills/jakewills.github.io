@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>JPW - Jake Wills</title>
+    <link href="https://www.jpw.nz/feed.xml" rel="self" />
+    <link href="https://www.jpw.nz" />
+    <updated>2022-08-15T09:44:06+12:00</updated>
+    <author>
+        <name>Jake Wills</name>
+    </author>
+    <id>https://www.jpw.nz</id>
+
+    <entry>
+        <title>KAMAR Custom Reporting</title>
+        <author>
+            <name>Jake Wills</name>
+        </author>
+        <link href="https://www.jpw.nz/kamar-custom-reporting/"/>
+        <id>https://www.jpw.nz/kamar-custom-reporting/</id>
+
+        <updated>2022-08-15T09:44:06+12:00</updated>
+            <summary>
+                <![CDATA[
+                    Custom Reporting for KAMAR I've worked with a number of schools to produce custom reports for them. Some examples of these are below. For some&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h1>Custom Reporting for KAMAR</h1>
+<p>I've worked with a number of schools to produce custom reports for them. Some examples of these are below. </p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://www.jpw.nz/media/posts/6/gallery/customreporting6.png" data-size="1190x1684"><img loading="lazy" src="https://www.jpw.nz/media/posts/6/gallery/customreporting6-thumbnail.png" alt="" width="768" height="1087"></a></figure>
+<figure class="gallery__item"><a href="https://www.jpw.nz/media/posts/6/gallery/customreporting5.png" data-size="1190x1684"><img loading="lazy" src="https://www.jpw.nz/media/posts/6/gallery/customreporting5-thumbnail.png" alt="" width="768" height="1087"></a></figure>
+<figure class="gallery__item"><a href="https://www.jpw.nz/media/posts/6/gallery/customreporting4.png" data-size="1190x1684"><img loading="lazy" src="https://www.jpw.nz/media/posts/6/gallery/customreporting4-thumbnail.png" alt="" width="768" height="1087"></a></figure>
+</div></div>
+<p>For some of the schools I also have made it easy to add teacher and student voice onto KAMAR reports using google docs.<br>If you want to talk to me about reports <a href="mailto:jake@jpw.nz">contact me</a>.<br>For other things I do <a href="https://www.jpw.nz/">see here</a>.<br><br>Teachers enter in the key competencies for students in a google doc:</p>
+<figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/6/customreporting1.png" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/6/responsive/customreporting1-xs.png 300w ,https://www.jpw.nz/media/posts/6/responsive/customreporting1-sm.png 480w ,https://www.jpw.nz/media/posts/6/responsive/customreporting1-md.png 768w"  alt="" width="2256" height="1237"></figure>
+<p>This makes it really easy to see who has and hasn't done their reports:</p>
+<figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/6/customreporting2.png" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/6/responsive/customreporting2-xs.png 300w ,https://www.jpw.nz/media/posts/6/responsive/customreporting2-sm.png 480w ,https://www.jpw.nz/media/posts/6/responsive/customreporting2-md.png 768w"  alt="" width="1789" height="857"></figure>
+<p>Optionally students can contribute their voice to the report as well using a google form:</p>
+<figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/6/customreporting3.png" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/6/responsive/customreporting3-xs.png 300w ,https://www.jpw.nz/media/posts/6/responsive/customreporting3-sm.png 480w ,https://www.jpw.nz/media/posts/6/responsive/customreporting3-md.png 768w"  alt="" width="664" height="607"></figure>
+<p>This is all then imported back into KAMAR so you can produce the reports using all the attendance and achievement data in there and have pages that look like these:</p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="2">
+<figure class="gallery__item"><a href="https://www.jpw.nz/media/posts/6/gallery/customreporting5-3.png" data-size="1190x1684"><img loading="lazy" src="https://www.jpw.nz/media/posts/6/gallery/customreporting5-3-thumbnail.png" alt="" width="768" height="1087"></a></figure>
+<figure class="gallery__item"><a href="https://www.jpw.nz/media/posts/6/gallery/customreporting4-3.png" data-size="1190x1684"><img loading="lazy" src="https://www.jpw.nz/media/posts/6/gallery/customreporting4-3-thumbnail.png" alt="" width="768" height="1087"></a></figure>
+</div></div>
+<p>I've also automated a bunch of this in <a href="https://about.parot.nz">P.A.R.O.T.</a> which makes it much easier to set up.</p>
+<p>If you want to get in touch <a href="mailto:jake@jpw.nz">email me</a>. For other things I do <a href="https://www.jpw.nz/">see here</a>.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Google Classroom Inviter</title>
+        <author>
+            <name>Jake Wills</name>
+        </author>
+        <link href="https://www.jpw.nz/google-classroom-inviter/"/>
+        <id>https://www.jpw.nz/google-classroom-inviter/</id>
+
+        <updated>2022-08-15T09:32:58+12:00</updated>
+            <summary>
+                <![CDATA[
+                    Google Classroom Inviter This is a google apps script to easily invite a teacher to all classrooms of another teacher. To run this script go&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h1>Google Classroom Inviter</h1>
+<div class="thing">This is a google apps script to easily invite a teacher to all classrooms of another teacher.</div>
+<p>To run this script go to script.google.com, create a new script, and paste this over the top of what is already in there</p>
+<p>The first time you load this script you need to go to Resources -&gt; Advanced Google Services and enable 'Google Classroom API'</p>
+<p>You need to replace the "teacherwithclasses" and the "teachertoadd" with the appropriate teachers email addresses. Will invite the teachertoadd to the first 100 classes that teacherwithclasses teaches.</p>
+<p>To view the output go to View -&gt; Logs</p>
+<pre>function inviteTeacher() {
+  
+  var teacherwithclasses = 'honora.paulin@kc.school.nz';
+  var teachertoadd = 'james.westgate@kc.school.nz';
+  
+  var alreadyin = [];
+  
+  var optionalArgs = {
+    pageSize: 100,
+    teacherId: teachertoadd
+  };
+  var response = Classroom.Courses.list(optionalArgs);
+  var courses = response.courses;
+  if (courses &amp;&amp; courses.length &gt; 0) {
+    for (i = 0; i &lt; courses.length; i++) {
+      var course = courses[i];
+      alreadyin.push(course.id);
+    }
+  }
+  var optionalArgs = {
+    pageSize: 100,
+    teacherId: teacherwithclasses
+  };
+  var response = Classroom.Courses.list(optionalArgs);
+  var courses = response.courses;
+  if (courses &amp;&amp; courses.length &gt; 0) {
+    for (i = 0; i &lt; courses.length; i++) {
+      var course = courses[i];
+      if(alreadyin.indexOf(course.id) == -1){
+        var toadd = {
+          "courseId": course.id,
+          "role": "TEACHER",
+          "userId": teachertoadd
+        }
+        Classroom.Invitations.create(toadd);
+        Logger.log('%s (%s)', course.name, course.id);
+      }
+    }
+  } else {
+    Logger.log('No courses found.');
+  }
+}</pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Power BI</title>
+        <author>
+            <name>Jake Wills</name>
+        </author>
+        <link href="https://www.jpw.nz/power-bi/"/>
+        <id>https://www.jpw.nz/power-bi/</id>
+
+        <updated>2022-08-15T09:32:53+12:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://www.jpw.nz/media/posts/2/powerbi.png" alt="" />
+                    Power BI I love making stuff in PowerBI, including custom visuals. See here for a few examples of things I have built. I've also made&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://www.jpw.nz/media/posts/2/powerbi.png" alt="" />
+                <h1>Power BI</h1>
+<p>I love making stuff in PowerBI, including custom visuals. See here for a few examples of things I have built.</p>
+<p>I've also made a <a href="https://youtu.be/vTr37C4FU0I" target="_blank" rel="noopener">video</a> showing how to do a few cool things in Power BI... see dashboard created in the video <a href="https://app.powerbi.com/view?r=eyJrIjoiMjgzY2JhMWItNzIyMS00Mjg2LTljOGQtYzQyNDhlNDNiZTI4IiwidCI6IjU5MzFiMzg0LWFhNDEtNDI0Ni1iZTMzLWUxOGQwMzg2ZWQzNCJ9" target="_blank" rel="noopener">here</a>.</p>
+<p>If you want me to build something for you, <a href="mailto:jake@jpw.nz">get in touch</a>.</p>
+<p><strong><a href="https://www.grapher.nz/">NZGrapher</a> Usage Data</strong></p>
+<figure class="post__image"><a href="https://info.grapher.nz/nzgrapher-usage.html" target="_blank" rel="noopener noreferrer"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi6.png" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi6-xs.png 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi6-sm.png 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi6-md.png 768w"  width="1154" height="705"></figure></a></p>
+<figure class="post__image"><strong>School Leaver Attainment - Up to 2017 Data - Using Public Data From Education Counts</strong><br><a href="https://app.powerbi.com/view?r=eyJrIjoiMjRlZTYyYTItOTM1YS00MGNkLWJhNTgtNWY1MTM1MjRlN2NhIiwidCI6IjU5MzFiMzg0LWFhNDEtNDI0Ni1iZTMzLWUxOGQwMzg2ZWQzNCJ9" target="_blank" rel="noopener"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi1-2.jpeg" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi1-2-xs.jpeg 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi1-2-sm.jpeg 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi1-2-md.jpeg 768w"  width="805" height="450"></figure><figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi2-2.jpeg" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi2-2-xs.jpeg 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi2-2-sm.jpeg 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi2-2-md.jpeg 768w"  width="805" height="450"></figure></a><br>See second page for custom map visuals. Also published on <a href="https://www.educationcounts.govt.nz/statistics/schooling/senior-student-attainment/school-leavers" target="_blank" rel="noopener">Education Counts</a><br><br><strong>NCEA Statistics - Up to 2020 Data - Using Public Data from NZQA</strong><br><a href="https://stats.jpw.nz/" target="_blank" rel="noopener"><figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi3.jpeg" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi3-xs.jpeg 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi3-sm.jpeg 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi3-md.jpeg 768w"  width="805" height="450"></figure></a><br><br><strong>Which SMS Schools are Using - As at July 2021 - Data from an OIA Request</strong><br><a href="https://app.powerbi.com/view?r=eyJrIjoiMGI4N2RiZWUtM2M3OS00ZjNmLWE5N2UtMTMzMWI5ODZjNzQ2IiwidCI6IjIwZTgwNzNlLWVlNjAtNDE3YS1hNGY5LTdjMTRlMzE4NmI0ZiJ9" target="_blank" rel="noopener"><figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi4.jpeg" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi4-xs.jpeg 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi4-sm.jpeg 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi4-md.jpeg 768w"  width="802" height="451"></figure></a><br><br><strong>Students Enrolled In - As at July 2018 - Using Public Data from Educaiton Counts</strong><br><a href="https://app.powerbi.com/view?r=eyJrIjoiZWFlZjJjZWMtZWI4Zi00ZjU5LWI0ZjktYzE4MWQwOWY4YjlmIiwidCI6IjU5MzFiMzg0LWFhNDEtNDI0Ni1iZTMzLWUxOGQwMzg2ZWQzNCJ9" target="_blank" rel="noopener"><figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi5.jpeg" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi5-xs.jpeg 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi5-sm.jpeg 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi5-md.jpeg 768w"  width="805" height="444"></figure></a></p>
+            ]]>
+        </content>
+    </entry>
+</feed>

@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en-nz"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Google Classroom Inviter - JPW - Jake Wills</title><meta name="description" content="Google Classroom Inviter This is a google apps script to easily invite a teacher to all classrooms of another teacher. To run this script go&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://www.jpw.nz/google-classroom-inviter/"><link rel="alternate" type="application/atom+xml" href="https://www.jpw.nz/feed.xml"><link rel="alternate" type="application/json" href="https://www.jpw.nz/feed.json"><meta property="og:title" content="Google Classroom Inviter"><meta property="og:image" content="https://www.jpw.nz/media/website/jw-2.png"><meta property="og:site_name" content="JPW - Jake Wills"><meta property="og:description" content="Google Classroom Inviter This is a google apps script to easily invite a teacher to all classrooms of another teacher. To run this script go&hellip;"><meta property="og:url" content="https://www.jpw.nz/google-classroom-inviter/"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://www.jpw.nz/media/website/jw.png" type="image/x-icon"><link rel="stylesheet" href="https://www.jpw.nz/assets/css/style.css?v=839fe6201743fa661febfb31048bcd4a"><link rel="stylesheet" href="https://www.jpw.nz/assets/css/prism-dark.css?v=4cc85e12ca94c0614c9359a37eb69a0c"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.jpw.nz/google-classroom-inviter/"},"headline":"Google Classroom Inviter","datePublished":"2022-08-15T09:28","dateModified":"2022-08-15T09:32","image":{"@type":"ImageObject","url":"https://www.jpw.nz/media/website/jw-2.png","height":2708,"width":2708},"description":"Google Classroom Inviter This is a google apps script to easily invite a teacher to all classrooms of another teacher. To run this script go&hellip;","author":{"@type":"Person","name":"Jake Wills","url":"https://www.jpw.nz/authors/jake-wills/"},"publisher":{"@type":"Organization","name":"Jake Wills","logo":{"@type":"ImageObject","url":"https://www.jpw.nz/media/website/jw-2.png","height":2708,"width":2708}}}</script></head><body><header class="top"><div class="top__logo"><a class="logo" href="https://www.jpw.nz/"><img src="https://www.jpw.nz/media/website/jw-2.png" alt="JPW - Jake Wills" width="2708" height="2708"></a></div><button class="navbar__toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button></header><main class="main"><div class="main__left"><div class="main__left-inner"><div class="main__left-content"><article class="post"><header><h1 class="post__title">Google Classroom Inviter</h1></header><div class="post__entry"><h1>Google Classroom Inviter</h1><div class="thing">This is a google apps script to easily invite a teacher to all classrooms of another teacher.</div><p>To run this script go to script.google.com, create a new script, and paste this over the top of what is already in there</p><p>The first time you load this script you need to go to Resources -&gt; Advanced Google Services and enable 'Google Classroom API'</p><p>You need to replace the "teacherwithclasses" and the "teachertoadd" with the appropriate teachers email addresses. Will invite the teachertoadd to the first 100 classes that teacherwithclasses teaches.</p><p>To view the output go to View -&gt; Logs</p><pre>function inviteTeacher() {
+  
+  var teacherwithclasses = 'honora.paulin@kc.school.nz';
+  var teachertoadd = 'james.westgate@kc.school.nz';
+  
+  var alreadyin = [];
+  
+  var optionalArgs = {
+    pageSize: 100,
+    teacherId: teachertoadd
+  };
+  var response = Classroom.Courses.list(optionalArgs);
+  var courses = response.courses;
+  if (courses &amp;&amp; courses.length &gt; 0) {
+    for (i = 0; i &lt; courses.length; i++) {
+      var course = courses[i];
+      alreadyin.push(course.id);
+    }
+  }
+  var optionalArgs = {
+    pageSize: 100,
+    teacherId: teacherwithclasses
+  };
+  var response = Classroom.Courses.list(optionalArgs);
+  var courses = response.courses;
+  if (courses &amp;&amp; courses.length &gt; 0) {
+    for (i = 0; i &lt; courses.length; i++) {
+      var course = courses[i];
+      if(alreadyin.indexOf(course.id) == -1){
+        var toadd = {
+          "courseId": course.id,
+          "role": "TEACHER",
+          "userId": teachertoadd
+        }
+        Classroom.Invitations.create(toadd);
+        Logger.log('%s (%s)', course.name, course.id);
+      }
+    }
+  } else {
+    Logger.log('No courses found.');
+  }
+}</pre></div></article></div></div></div><div class="main__right"><div class="main__right-inner"><nav class="navbar"><ul class="navbar__menu"><li><a href="https://www.jpw.nz/" target="_self">Home</a></li><li><a href="https://www.jpw.nz/power-bi/" target="_self">PowerBI</a></li><li class="active"><a href="https://www.jpw.nz/google-classroom-inviter/" target="_self">Google Classroom Inviter</a></li><li><a href="https://www.jpw.nz/kamar-custom-reporting/" target="_self">KAMAR Custom Reporting</a></li><li><a href="https://jpw.screenconnect.com/" target="_self">Remote Support</a></li></ul></nav><div class="footer main__right-footer"><div class="footer__copy"></div></div></div></div></main><footer class="footer"><div class="footer__wrap"><div class="footer__inner"><div class="footer__copy"></div></div></div></footer><script>window.publiiThemeMenuConfig = {    
+        mobileMenuMode: 'sidebar',        
+        submenuWidth: 300,        
+        mobileMenuExpandableSubmenus: true,
+        isHoverMenu: false,
+        ariaButtonAttribute: 'aria-expanded',
+   };</script><script defer="defer" src="https://www.jpw.nz/assets/js/scripts.min.js?v=2633843d0ec7bc1192485f15a75eb96d"></script><script>var images = document.querySelectorAll('img[loading]');
+
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script><script defer="defer" src="https://www.jpw.nz/assets/js/prism.js?v=3f40a85448916137440d70109f6ef21e"></script><script defer="defer" src="https://www.jpw.nz/assets/js/prism-line-numbers.min.js?v=13275d3ac10d7028cf6a6f5da276f68c"></script><script defer="defer" src="https://www.jpw.nz/assets/js/clipboard.min.js?v=ad98572d415d2f2452845a6068a913c0"></script><script defer="defer" src="https://www.jpw.nz/assets/js/prism-copy-to-clipboard.min.js?v=57b50bd6f44169b9bab177133c984653"></script></body></html>
