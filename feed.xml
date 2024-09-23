@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>JPW - Jake Wills</title>
     <link href="https://www.jpw.nz/feed.xml" rel="self" />
     <link href="https://www.jpw.nz" />
@@ -33,11 +33,11 @@
 <figure class="gallery__item"><a href="https://www.jpw.nz/media/posts/6/gallery/customreporting4.png" data-size="1190x1684"><img loading="lazy" src="https://www.jpw.nz/media/posts/6/gallery/customreporting4-thumbnail.png" alt="" width="768" height="1087"></a></figure>
 </div></div>
 <p>For some of the schools I also have made it easy to add teacher and student voice onto KAMAR reports using google docs.<br>If you want to talk to me about reports <a href="mailto:jake@jpw.nz">contact me</a>.<br>For other things I do <a href="https://www.jpw.nz/">see here</a>.<br><br>Teachers enter in the key competencies for students in a google doc:</p>
-<figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/6/customreporting1.png" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/6/responsive/customreporting1-xs.png 300w ,https://www.jpw.nz/media/posts/6/responsive/customreporting1-sm.png 480w ,https://www.jpw.nz/media/posts/6/responsive/customreporting1-md.png 768w"  alt="" width="2256" height="1237"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/6/customreporting1.png" alt="" width="2256" height="1237" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/6/responsive/customreporting1-xs.png 300w ,https://www.jpw.nz/media/posts/6/responsive/customreporting1-sm.png 480w ,https://www.jpw.nz/media/posts/6/responsive/customreporting1-md.png 768w"></figure>
 <p>This makes it really easy to see who has and hasn't done their reports:</p>
-<figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/6/customreporting2.png" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/6/responsive/customreporting2-xs.png 300w ,https://www.jpw.nz/media/posts/6/responsive/customreporting2-sm.png 480w ,https://www.jpw.nz/media/posts/6/responsive/customreporting2-md.png 768w"  alt="" width="1789" height="857"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/6/customreporting2.png" alt="" width="1789" height="857" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/6/responsive/customreporting2-xs.png 300w ,https://www.jpw.nz/media/posts/6/responsive/customreporting2-sm.png 480w ,https://www.jpw.nz/media/posts/6/responsive/customreporting2-md.png 768w"></figure>
 <p>Optionally students can contribute their voice to the report as well using a google form:</p>
-<figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/6/customreporting3.png" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/6/responsive/customreporting3-xs.png 300w ,https://www.jpw.nz/media/posts/6/responsive/customreporting3-sm.png 480w ,https://www.jpw.nz/media/posts/6/responsive/customreporting3-md.png 768w"  alt="" width="664" height="607"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/6/customreporting3.png" alt="" width="664" height="607" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/6/responsive/customreporting3-xs.png 300w ,https://www.jpw.nz/media/posts/6/responsive/customreporting3-sm.png 480w ,https://www.jpw.nz/media/posts/6/responsive/customreporting3-md.png 768w"></figure>
 <p>This is all then imported back into KAMAR so you can produce the reports using all the attendance and achievement data in there and have pages that look like these:</p>
 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="2">
 <figure class="gallery__item"><a href="https://www.jpw.nz/media/posts/6/gallery/customreporting5-3.png" data-size="1190x1684"><img loading="lazy" src="https://www.jpw.nz/media/posts/6/gallery/customreporting5-3-thumbnail.png" alt="" width="768" height="1087"></a></figure>
@@ -56,7 +56,7 @@
         <link href="https://www.jpw.nz/google-classroom-inviter/"/>
         <id>https://www.jpw.nz/google-classroom-inviter/</id>
 
-        <updated>2023-04-22T10:06:09+12:00</updated>
+        <updated>2022-08-15T09:28:44+12:00</updated>
             <summary>
                 <![CDATA[
                     Google Classroom Inviter This is a google apps script to easily invite a teacher to all classrooms of another teacher. To run this script go&hellip;
@@ -122,8 +122,9 @@
         </author>
         <link href="https://www.jpw.nz/power-bi/"/>
         <id>https://www.jpw.nz/power-bi/</id>
+        <media:content url="https://www.jpw.nz/media/posts/2/powerbi.png" medium="image" />
 
-        <updated>2023-04-22T10:11:41+12:00</updated>
+        <updated>2022-08-11T20:28:04+12:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://www.jpw.nz/media/posts/2/powerbi.png" alt="" />
@@ -132,20 +133,20 @@
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://www.jpw.nz/media/posts/2/powerbi.png" alt="" />
+                    <p><img src="https://www.jpw.nz/media/posts/2/powerbi.png" class="type:primaryImage" alt="" /></p>
                 <h1>Power BI</h1>
 <p>I love making stuff in PowerBI, including custom visuals. See here for a few examples of things I have built.</p>
 <p>I've also made a <a href="https://youtu.be/vTr37C4FU0I" target="_blank" rel="noopener">video</a> showing how to do a few cool things in Power BI... see dashboard created in the video <a href="https://app.powerbi.com/view?r=eyJrIjoiMjgzY2JhMWItNzIyMS00Mjg2LTljOGQtYzQyNDhlNDNiZTI4IiwidCI6IjU5MzFiMzg0LWFhNDEtNDI0Ni1iZTMzLWUxOGQwMzg2ZWQzNCJ9" target="_blank" rel="noopener">here</a>.</p>
 <p>If you want me to build something for you, <a href="mailto:jake@jpw.nz">get in touch</a>.</p>
 <h6><strong><a href="https://www.grapher.nz/">NZGrapher</a> Usage Data</strong></h6>
-<figure class="post__image"><a href="https://info.grapher.nz/nzgrapher-usage.html" target="_blank" rel="noopener noreferrer"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi6.png" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi6-xs.png 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi6-sm.png 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi6-md.png 768w"  width="1154" height="705"></figure></a></p>
+<figure class="post__image"><a href="https://info.grapher.nz/nzgrapher-usage.html" target="_blank" rel="noopener noreferrer"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi6.png" width="1154" height="705" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi6-xs.png 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi6-sm.png 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi6-md.png 768w"></figure></a></p>
 <h6><strong>School Statistics - Using Public Data from NZQA and </strong><span style="color: #02192b;"><strong>Education</strong></span><strong> Counts</strong></h6>
 <p>Includes National NCEA Statistics, School NCEA Results, School Rolls and Equity Index Data.</p>
-<figure class="post__image"><a href="https://stats.jpw.nz/"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/Screenshot-2022-11-10-192428.png" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/Screenshot-2022-11-10-192428-xs.png 300w ,https://www.jpw.nz/media/posts/2/responsive/Screenshot-2022-11-10-192428-sm.png 480w ,https://www.jpw.nz/media/posts/2/responsive/Screenshot-2022-11-10-192428-md.png 768w"  alt="" width="2559" height="1288"></figure></a></p>
-<h6><strong>School Leaver Attainment - Up to 2017 Data - Using Public Data From Education Counts</strong><a href="https://app.powerbi.com/view?r=eyJrIjoiMjRlZTYyYTItOTM1YS00MGNkLWJhNTgtNWY1MTM1MjRlN2NhIiwidCI6IjU5MzFiMzg0LWFhNDEtNDI0Ni1iZTMzLWUxOGQwMzg2ZWQzNCJ9" target="_blank" rel="noopener"><figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi1-2.jpeg" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi1-2-xs.jpeg 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi1-2-sm.jpeg 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi1-2-md.jpeg 768w"  width="805" height="450"></figure><figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi2-2.jpeg" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi2-2-xs.jpeg 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi2-2-sm.jpeg 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi2-2-md.jpeg 768w"  width="805" height="450"></figure></a></h6>
+<figure class="post__image"><a href="https://stats.jpw.nz/"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/Screenshot-2022-11-10-192428.png" alt="" width="2559" height="1288" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/Screenshot-2022-11-10-192428-xs.png 300w ,https://www.jpw.nz/media/posts/2/responsive/Screenshot-2022-11-10-192428-sm.png 480w ,https://www.jpw.nz/media/posts/2/responsive/Screenshot-2022-11-10-192428-md.png 768w"></figure></a></p>
+<h6><strong>School Leaver Attainment - Up to 2017 Data - Using Public Data From Education Counts</strong><a href="https://app.powerbi.com/view?r=eyJrIjoiMjRlZTYyYTItOTM1YS00MGNkLWJhNTgtNWY1MTM1MjRlN2NhIiwidCI6IjU5MzFiMzg0LWFhNDEtNDI0Ni1iZTMzLWUxOGQwMzg2ZWQzNCJ9" target="_blank" rel="noopener"><figure class="post__image"><img  src="https://www.jpw.nz/media/posts/2/powerbi1-2.jpeg" width="805" height="450" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi1-2-xs.jpeg 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi1-2-sm.jpeg 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi1-2-md.jpeg 768w"></figure><figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi2-2.jpeg" width="805" height="450" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi2-2-xs.jpeg 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi2-2-sm.jpeg 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi2-2-md.jpeg 768w"></figure></a></h6>
 <p>See second page for custom map visuals. Also published on <a href="https://www.educationcounts.govt.nz/statistics/schooling/senior-student-attainment/school-leavers" target="_blank" rel="noopener">Education Counts</a></p>
-<h6><strong>Which SMS Schools are Using - As at July 2022 - Data from an OIA Request</strong><br><a href="https://app.powerbi.com/view?r=eyJrIjoiMGI4N2RiZWUtM2M3OS00ZjNmLWE5N2UtMTMzMWI5ODZjNzQ2IiwidCI6IjIwZTgwNzNlLWVlNjAtNDE3YS1hNGY5LTdjMTRlMzE4NmI0ZiJ9" target="_blank" rel="noopener"><figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi4.jpeg" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi4-xs.jpeg 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi4-sm.jpeg 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi4-md.jpeg 768w"  width="802" height="451"></figure></a></h6>
-<figure class="post__image"><strong>Students Enrolled In - As at July 2018 - Using Public Data from Educaiton Counts</strong><br><a href="https://app.powerbi.com/view?r=eyJrIjoiZWFlZjJjZWMtZWI4Zi00ZjU5LWI0ZjktYzE4MWQwOWY4YjlmIiwidCI6IjU5MzFiMzg0LWFhNDEtNDI0Ni1iZTMzLWUxOGQwMzg2ZWQzNCJ9" target="_blank" rel="noopener"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi5.jpeg" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi5-xs.jpeg 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi5-sm.jpeg 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi5-md.jpeg 768w"  width="805" height="444"></figure></a></p>
+<h6><strong>Which SMS Schools are Using - As at July 2022 - Data from an OIA Request</strong><br><a href="https://app.powerbi.com/view?r=eyJrIjoiMGI4N2RiZWUtM2M3OS00ZjNmLWE5N2UtMTMzMWI5ODZjNzQ2IiwidCI6IjIwZTgwNzNlLWVlNjAtNDE3YS1hNGY5LTdjMTRlMzE4NmI0ZiJ9" target="_blank" rel="noopener"><figure class="post__image"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi4.jpeg" width="802" height="451" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi4-xs.jpeg 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi4-sm.jpeg 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi4-md.jpeg 768w"></figure></a></h6>
+<figure class="post__image"><strong>Students Enrolled In - As at July 2018 - Using Public Data from Educaiton Counts</strong><br><a href="https://app.powerbi.com/view?r=eyJrIjoiZWFlZjJjZWMtZWI4Zi00ZjU5LWI0ZjktYzE4MWQwOWY4YjlmIiwidCI6IjU5MzFiMzg0LWFhNDEtNDI0Ni1iZTMzLWUxOGQwMzg2ZWQzNCJ9" target="_blank" rel="noopener"><img loading="lazy"  src="https://www.jpw.nz/media/posts/2/powerbi5.jpeg" width="805" height="444" sizes="(max-width: 768px) 100vw, 768px" srcset="https://www.jpw.nz/media/posts/2/responsive/powerbi5-xs.jpeg 300w ,https://www.jpw.nz/media/posts/2/responsive/powerbi5-sm.jpeg 480w ,https://www.jpw.nz/media/posts/2/responsive/powerbi5-md.jpeg 768w"></figure></a></p>
             ]]>
         </content>
     </entry>
